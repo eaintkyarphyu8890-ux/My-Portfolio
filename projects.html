@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Projects | Eaint Kyar Phyu</title>
+
+<style>
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+
+    font-family:Arial,sans-serif;
+
+    color:#211b45;
+
+}
+
+header {
+
+    padding:18px 7%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    box-shadow:0 2px 10px #ddd;
+
+}
+
+.logo { color:#5424d6; font-size:24px; font-weight:bold; }
+
+nav a {
+
+    text-decoration:none;
+
+    color:#211b45;
+
+    margin-left:20px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+nav a:hover, nav a.active { color:#5424d6; }
+
+.banner {
+
+    text-align:center;
+
+    padding:65px 20px;
+
+    background:linear-gradient(120deg,#eee8ff,#c6b1ff);
+
+}
+
+.banner h1 { color:#5424d6; font-size:40px; }
+
+.banner p { margin-top:10px; color:#625d79; }
+
+.projects {
+
+    padding:65px 8%;
+
+    background:#faf9ff;
+
+}
+
+.projects h2 {
+
+    color:#5424d6;
+
+    margin-bottom:30px;
+
+    font-size:30px;
+
+}
+
+.project-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.project-card {
+
+    background:white;
+
+    border-radius:17px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px #5424d615;
+
+    transition:.3s;
+
+}
+
+.project-card:hover {
+
+    transform:translateY(-8px);
+
+}
+
+.project-image {
+
+    height:170px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:white;
+
+}
+
+.one { background:linear-gradient(135deg,#a6a4ff,#5140a8); }
+
+.two { background:linear-gradient(135deg,#172b59,#5273c8); }
+
+.three { background:linear-gradient(135deg,#b4d9ff,#7e6ce5); }
+
+.project-info { padding:22px; }
+
+.project-info h3 {
+
+    font-size:18px;
+
+    margin-bottom:12px;
+
+}
+
+.project-info p {
+
+    color:#625d79;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+}
+
+.tags {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+    margin-bottom:18px;
+
+}
+
+.tags span {
+
+    background:#eee8ff;
+
+    color:#5424d6;
+
+    padding:6px 10px;
+
+    border-radius:20px;
+
+    font-size:11px;
+
+}
+
+.project-info a {
+
+    color:#5424d6;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+}
+
+footer {
+
+    background:#211642;
+
+    color:white;
+
+    text-align:center;
+
+    padding:22px;
+
+}
+
+@media(max-width:800px) {
+
+    .project-grid { grid-template-columns:repeat(2,1fr); }
+
+}
+
+@media(max-width:600px) {
+
+    header { flex-direction:column; gap:15px; }
+
+    nav { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
+
+    nav a { margin:0; font-size:12px; }
+
+    .project-grid { grid-template-columns:1fr; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">EK.</div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="skills.html">Skills</a>
+
+        <a href="projects.html" class="active">Projects</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+<section class="banner">
+
+    <h1>My Projects</h1>
+
+    <p>Explore my recent work and projects</p>
+
+</section>
+
+<section class="projects">
+
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <div class="project-image one">
+
+                UniTrade
+
+            </div>
+
+            <div class="project-info">
+
+                <h3>UniTrade - Student Marketplace</h3>
+
+                <p>
+
+                    A student marketplace website
+
+                    for buying and selling second-hand
+
+                    books and accessories.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>PHP</span>
+
+                    <span>MySQL</span>
+
+                    <span>Bootstrap</span>
+
+                </div>
+
+                <a href="#">View Project →</a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-image two">
+
+                Portfolio
+
+            </div>
+
+            <div class="project-info"><h3>Personal Portfolio Website</h3>
+
+                <p>
+
+                    A personal website to introduce
+
+                    myself and showcase my skills
+
+                    and achievements.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>JavaScript</span>
+
+                </div>
+
+                <a href="index.html">View Project →</a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-image three">
+
+                Calculator
+
+            </div>
+
+            <div class="project-info">
+
+                <h3>Simple Calculator</h3>
+
+                <p>
+
+                    A simple calculator application
+
+                    with a modern and user-friendly
+
+                    interface.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>JavaScript</span>
+
+                </div>
+
+                <a href="#">View Project →</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Eaint Kyar Phyu. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
