@@ -1,108 +1,372 @@
 <!DOCTYPE html>
 
-<html lang=“en”>
+<html lang="en">
 
 <head>
 
-    <meta charset=“UTF-8”>
+<meta charset="UTF-8">
 
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Eaint Kyar Phyu | Portfolio</title>
+<title>Eaint Kyar Phyu | Portfolio</title>
 
-    <link rel=“stylesheet” href=“css/style.css”>
+<style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    color: #211b45;
+
+}
+
+header {
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: white;
+
+    box-shadow: 0 2px 10px #ddd;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+
+}
+
+.logo {
+
+    color: #5424d6;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: #211b45;
+
+    margin-left: 22px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+nav a:hover, nav a.active {
+
+    color: #5424d6;
+
+}
+
+.hero {
+
+    min-height: 570px;
+
+    padding: 60px 8%;
+
+    background: linear-gradient(120deg, #faf8ff, #c6b1ff);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+}
+
+.hero-content {
+
+    max-width: 550px;
+
+}
+
+.hero h3 {
+
+    font-size: 24px;
+
+}
+
+.hero h1 {
+
+    color: #5424d6;
+
+    font-size: 52px;
+
+    margin: 12px 0;
+
+}
+
+.hero h2 {
+
+    font-size: 23px;
+
+}
+
+.hero p {
+
+    color: #625d79;
+
+    line-height: 1.8;
+
+    margin: 20px 0;
+
+}
+
+.btn {
+
+    display: inline-block;
+
+    background: #5424d6;
+
+    color: white;
+
+    padding: 13px 22px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    margin: 5px;
+
+    transition: .3s;
+
+}
+
+.btn:hover {
+
+    background: #35119a;
+
+    transform: translateY(-3px);
+
+}
+
+.btn-outline {
+
+    background: transparent;
+
+    color: #5424d6;
+
+    border: 1px solid #5424d6;
+
+}
+
+.hero img {
+
+    width: 320px;
+
+    height: 370px;
+
+    object-fit: cover;
+
+    border-radius: 48% 48% 15px 15px;
+
+    border: 7px solid white;
+
+    box-shadow: 0 10px 30px #5424d633;
+
+}
+
+.welcome {
+
+    text-align: center;
+
+    padding: 65px 20px;
+
+}
+
+.welcome h2 {
+
+    color: #5424d6;
+
+    margin-bottom: 15px;
+
+}
+
+.welcome p {
+
+    color: #625d79;
+
+    line-height: 1.8;
+
+}
+
+footer {
+
+    background: #211642;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+
+}
+
+@media(max-width: 700px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    nav {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+
+    }
+
+    nav a {
+
+        margin: 0;
+
+        font-size: 12px;
+
+    }
+
+    .hero {
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+    }
+
+    .hero h1 {
+
+        font-size: 38px;
+
+    }
+
+    .hero img {
+
+        width: 240px;
+
+        height: 280px;
+
+    }
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-    <!— Navigation Bar —>
+<header>
 
-    <header>
+    <div class="logo">EK.</div>
 
-        <nav class=“navbar”>
+    <nav>
 
-            <div class=“logo”>EK</div>
+        <a href="index.html" class="active">Home</a>
 
-            <h2>Eaint Kyar Phyu</h2>
+        <a href="about.html">About</a>
 
-            <ul>
+        <a href="skills.html">Skills</a>
 
-                <li><a href=“index.html” class=“active”>Home</a></li>
+        <a href="projects.html">Projects</a>
 
-                <li><a href=“about.html”>About</a></li>
+        <a href="contact.html">Contact</a>
 
-                <li><a href=“skills.html”>Skills</a></li>
+    </nav>
 
-                <li><a href=“projects.html”>Projects</a></li>
+</header>
 
-                <li><a href=“contact.html”>Contact</a></li>
+<section class="hero">
 
-            </ul>
+    <div class="hero-content">
 
-        </nav>
+        <h3>Hello, I'm</h3>
 
-    </header>
+        <h1>Eaint Kyar Phyu</h1>
 
-    <!— Hero Section —>
-
-    <section class=“hero”>
-
-        <div class=“hero-content”>
-
-            <h3>Hello, I’m</h3>
-
-            <h1>Eaint Kyar Phyu</h1>
-
-            <h2>Web Developer & Student</h2>
-
-            <p>
-
-                I love creating beautiful and functional websites.
-
-                Turning ideas into digital experiences.
-
-            </p>
-
-            <a href=“projects.html” class=“btn”>
-
-                View My Projects
-
-            </a>
-
-            <a href=“contact.html” class=“btn outline”>
-
-                Contact Me
-
-            </a>
-
-        </div>
-
-        <div class=“hero-image”>
-
-            <img src=“images/profile.jpg”
-
-                 alt=“My Profile Picture”>
-
-        </div>
-
-    </section>
-
-    <!— Footer —>
-
-    <footer>
+        <h2>Web Developer & Student</h2>
 
         <p>
 
-            © 2026 Eaint Kyar Phyu.
+            I am a passionate Computer Science student
 
-            All Rights Reserved.
+            who loves creating beautiful and functional
+
+            websites. I enjoy learning new technologies
+
+            and turning ideas into digital experiences.
 
         </p>
 
-    </footer>
+        <a href="projects.html" class="btn">
 
-    <script src=“js/script.js”></script>
+            View My Projects →
+
+        </a>
+
+        <a href="contact.html" class="btn btn-outline">
+
+            Contact Me
+
+        </a>
+
+    </div>
+
+    <img src="images/profile.jpg" alt="My Profile">
+
+</section>
+
+<section class="welcome">
+
+    <h2>Welcome To My Portfolio</h2>
+
+    <p>
+
+        Explore my skills, education and projects.
+
+        Thank you for visiting my personal website!
+
+    </p>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Eaint Kyar Phyu. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 
